@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter";
+}
+
+.wrap__content {
+  width: 100%;
+  max-width: 1174px;
+  margin-left: 373px;
+}
+
+header {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header__logo__img {
+  width: 35px;
+  height: 40px;
+}
+
+.header__logo__text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-left: 14.792px;
+  width: 137px;
+  height: 40px;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.header__logo__text span {
+  color: #f25822;
+}
+
+.menu {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.menu a {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.menu__block {
+  padding: 10px 10px;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.menu__link:active {
+  font-weight: 600;
+  color: #f25822;
+}
+
+.menu__link:active {
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+}
+
+.menu__arrow {
+  width: 10px;
+  height: 10px;
+  background-image: url("./img/arrow.svg");
+}
+
+main {
+  margin-top: 84px;
+  display: flex;
+  width: 1174px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main__content {
+  width: 556px;
+}
+
+h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.main__content__text {
+  margin-top: 20px;
+  color: #888;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.main__content__buttons {
+  margin-top: 32px;
+}
+
+.start_now {
+  width: 140px;
+  padding: 16px 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #ffffff;
+  border-radius: 56px;
+  border-style: hidden;
+  background: #f25822;
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+  cursor: pointer;
+}
+
+.watch_videos {
+  margin-left: 48px;
+  color: #aaa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-style: hidden;
+  background: none;
+  cursor: pointer;
+}
+
+.main__img {
+  width: 545px;
+  height: 375px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.footer__links img {
+  width: 134px;
+  height: 50px;
+}
