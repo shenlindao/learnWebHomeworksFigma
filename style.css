@@ -15,7 +15,7 @@ body {
 .wrap__content {
   width: 100%;
   max-width: 1174px;
-  margin-left: 373px;
+  margin: auto;
 }
 
 header {
