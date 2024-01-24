@@ -12,17 +12,19 @@ body {
   font-family: "Inter";
 }
 
-.wrap__content {
+.wrapper {
   width: 100%;
   max-width: 1174px;
-  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 header {
-  margin-top: 40px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .header__logo {
@@ -93,45 +95,55 @@ header {
 .menu__arrow {
   width: 10px;
   height: 10px;
-  background-image: url("./img/arrow.svg");
+  background-image: url("./img/arrow_down_b.svg");
 }
 
 main {
-  margin-top: 84px;
-  display: flex;
-  width: 1174px;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: block;
 }
 
-.main__content {
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 84px;
+}
+
+.home__content {
   width: 556px;
 }
 
 h1 {
   color: #000;
-  font-family: Inter;
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
 }
 
-.main__content__text {
+h2 {
+  color: #000;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.home__content__text {
   margin-top: 20px;
   color: #888;
-  font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
 }
 
-.main__content__buttons {
+.home__content__buttons {
   margin-top: 32px;
 }
 
-.start_now {
+.orange_btn {
   width: 140px;
   padding: 16px 10px;
   font-size: 16px;
@@ -158,25 +170,162 @@ h1 {
   cursor: pointer;
 }
 
-.main__img {
+.home__img {
   width: 545px;
   height: 375px;
 }
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 100px;
 }
 
-.footer__links {
+.brand_logo {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 48px;
   align-content: center;
   flex-wrap: wrap;
+  padding: 100px 0 100px 0;
 }
 
-.footer__links img {
+.brand_logo img {
   width: 134px;
   height: 50px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px 0 100px 0;
+  gap: 20px;
+}
+
+.articles {
+  width: 310px;
+  height: 230px;
+  display: flex;
+  padding: 40px 34px;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #fff;
+}
+.articles:hover {
+  box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.art_img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 25px;
+}
+
+.art_title {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+
+.art_content {
+  color: #666;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 25px;
+}
+
+.art_more {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 100px 0;
+  gap: 20px;
+  background: #fafafa;
+}
+
+.fird_title {
+  min-height: 126px;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.fird_sub_h2 {
+  max-width: 740px;
+  color: #888;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 24px;
+}
+
+.why_card {
+  width: 310px;
+  display: flex;
+  padding: 0px 34px 34px 34px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  flex: 1 0 0;
+  background: #fff;
+}
+
+.why_img {
+}
+
+.why_title {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.why_sub_title {
+  color: #666;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.why_button {
+  min-width: 166px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_arrow {
+  width: 10px;
+  height: 10px;
+  background: url("./img/arrow_right_w.svg");
+  margin-left: 4px;
 }
